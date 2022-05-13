@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>WPD 6</title>
+</head>
+<body background="E:\Diploma\wpd images\Safricloud-bg-web.jpg">
+
+<p>The pointer in C language is a variable which stores the address of another variable. This variable can be of type int, char, array, function, or any other pointer. The size of the pointer depends on the architecture. However, in 32-bit architecture the size of a pointer is 2 byte.Some C programming tasks are performed more easily with pointers, and other tasks, such as dynamic memory allocation, cannot be performed without using pointers. So it becomes necessary to learn pointers to become a perfect C programmer. Let's start learning them in simple and easy steps.</p>
+<h2 tyle="color:blue;text-align: center;font_family:tempus sans;font-size:200%;border: 2px solid olive;"> Declaration of pointers</h2>
+<p style="background-color:yellow;"><b>int *a;//pointer to int  </b></p>
+<h3 style="color:green;text-align: center;font_family:tempus sans;font-size:200%;border: 4px solid tomato;"> Advantages of Pointers:-</h3>
+<p>1) Pointer reduces the code and improves the performance, it is used to retrieving strings, trees, etc. and used with arrays, structures, and functions.<br>
+
+2) We can return multiple values from a function using the pointer.<br>
+
+3) It makes you able to access any memory location in the computer's memory.<br></p>
+<h4 style="color:red;text-align: center;font_family:tempus sans;font-size:200%;border: 3px solid olive;"> Usage of Pointers</h4>
+<p><b>1) Dynamic memory allocation</b><br>
+
+In c language, we can dynamically allocate memory using malloc() and calloc() functions where the pointer is used.<br>
+
+<b>2) Arrays, Functions, and Structures</b>
+
+Pointers in c language are widely used in arrays, functions, and structures. It reduces the code and improves the performance.<br></p>
+<h5  style="color:red;text-align: center;font_family:tempus sans;font-size:200%;border: 3px solid olive;"> Program using Pointers</h5>
+<p><b>#include<stdio.h>  <br>
+int main(){  <br>
+int number=50;   <br> 
+int *p;  <br.    
+p=&number;//stores the address of number variable;<br>    
+printf("Address of p variable is %x \n",p); // p contains the address of the number therefore printing p gives the address of number. <br>    
+printf("Value of p variable is %d \n",*p); // As we know that * is used to dereference a pointer therefore if we print *p, we will get the value stored at the address contained by p. <br> 
+return 0;  <br>
+}    <br>
+</b></p>
+<p style="font-color:blue;"><b> Output of The Program</b><br>
+Address of number variable is fff4<br>
+Address of p variable is fff4<br>
+Value of p variable is 50<br></p>
+<h6 style="color:violet;text-align: center;font_family:tempus sans;font-size:200%;border: 3px solid olive;"> Various types of pointers to different aspects in C</h6>
+<p><ul>
+<b><li>Pointer to array:-int *p[10]=&arr; // Variable p of type pointer is pointing to the address of an integer array arr.  </li>
+<li>Pointer to a function:-void(*p)(int) = &display; // Pointer p is pointing to the address of a function  </li>
+<li>Pointer to structure:-struct st *p = &ref;  </li>
+</body>
+</html>
+
+
+
+
+
+

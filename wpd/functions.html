@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>functions</title>
+</head>
+<body background="E:\Diploma\wpd images\Safricloud-bg-web.jpg">
+<h1 style="color:teal;text-align:center;font_family:times new roman;border:4px;border-style:solid;border-color:lightcoral;background-color:mistyrose;">Functions</h1>
+<div><p>
+A function is a block of code which only runs when it is called.
+You can pass data, known as parameters, into a function.
+Functions are used to perform certain actions, and they are important for reusing code: <u>Define the code once, and use it many times.</u><br>
+<br>
+In this most of our programs will have two or more functions.<br>
+<b>There are two types of functions in C programming:</b><br>
+(1)<u>Library Functions</u>: are the functions which are declared in the C header files such as scanf(), printf(), gets(), puts(), ceil(), floor() etc.<br>
+(2)<u>User-defined functions</u>: are the functions which are created by the C programmer, so that he/she can use it many times.<br>
+</div>
+<div><b>Syntax</b><br>
+<pre><p style="border:4px;border-style:solid;border-color:gray;">
+void myFunction()
+{
+  // statements;
+}</pre></p>
+<br>
+~myFunction(): is the name of the function.<br>
+~void means that the function does not have a return value.<br>
+~Inside the function (the body), add code that defines what the function should do.<br>
+<hr>
+<h2><b><u>Call a Function</b><br></h2></u>
+Declared functions are not executed immediately. They are "saved for later use", and will be executed when they are called.
+To call a function, write the function's name followed by two parentheses () and a semicolon ;
+In the following example, myFunction() is used to print a text (the action), when it is called:<br>
+</div>
+<div><b>Example:</b><br>
+<pre><p style="background-color:#FFFFE0;">
+#include <stdio.h>
+// Create a function
+void myFunction() {
+  printf("hello world!");
+}
+
+int main() {
+  myFunction(); // call the function
+  return 0;
+}</pre><br></p>
+</div>
+<hr>
+<div><h1 style="color:teal;text-align:center;font_family:times new roman;border:4px;border-style:solid;border-color:lightcoral;background-color:mistyrose;">C Function Parameters and Arguments</h1>
+<h2><u>Paramaters  </h2></u>
+<p>Information can be passed to functions as a parameter. Parameters act as variables inside the function.<br>
+<br>
+Parameters are specified after the function name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma:<br>
+<br>
+<b>Syntax</b><br>
+<pre><p style="border:4px;border-style:solid;border-color:gray;">returnType functionName(parameter1, parameter2, parameter3) 
+{
+  // code to be executed
+}</pre><br></p>
+<br>
+<b>Example</b>
+<br>
+<pre><p style="background-color:#FFFFE0;">
+void myFunction(char name[]) 
+{
+  printf("Hello %s\n", name);
+}
+
+int main() {
+  myFunction("Liam");
+  myFunction("Jenny");
+  myFunction("Anja");
+  return 0;
+}</pre></p>
+<br>
+<b>Output:</b><br>
+<pre>Hello Liam
+Hello Jenny
+Hello Anja</pre></div><br>
+<hr>
+<div><h2><u>Arguments</h2></u>
+When a parameter is passed to the function, it is called an argument. So, from the example above: name is a parameter, while Liam, Jenny and Anja are arguments.
+<hr>
+<div><h2><u>Return Values</h2></u>
+<p>The void keyword, used in the previous examples, indicates that the function should not return a value. If you want the function to return a value, 
+you can use a data type (such as int or float, etc.) instead of void, and use the return keyword inside the function:</p><br>
+<br>
+<b>Example:</b><br>
+<pre><p style="background-color:#FFFFE0;">int myFunction(int x) 
+{
+  return 5 + x;
+}
+
+int main() 
+{
+  printf("Result is: %d", myFunction(3));
+
+  return 0;
+}</pre><br></p>
+<br>
+<b>Output:</b><br>
+<pre>Outputs 8 (5 + 3)</pre><br>
+</div>
+<a href="E:\Diploma\functions1.html">Function declaration and definition</a><br>
+<a href="E:\Diploma\function2.html">C recursion</a><br>
+<a href="E:\Diploma\function3.html">C math function</a><br> 
+</body>
+</html>

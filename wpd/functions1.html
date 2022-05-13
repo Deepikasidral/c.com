@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>functions1</title>
+<style>
+table,th,td{
+border:1px solid black;
+}
+</style>
+</head>
+<body background="E:\Diploma\wpd images\Safricloud-bg-web.jpg">
+<h1 style="color:teal;text-align:center;font_family:times new roman;border:4px;border-style:solid;border-color:lightcoral;background-color:mistyrose;"> Function Declaration and Definition</h1>
+<div>You just learned from the previous chapters that you can create and call a function it.<br></div>
+<div>A function consist of two parts:<br>
+<br>
+<b>Declaration:</b> the function's name, return type, and parameters (if any)<br>
+<b>Definition:</b> the body of the function (code to be executed)<br>
+<br>
+<b>Syntax</b><br>
+<pre><p style="border:4px;border-style:solid;border-color:gray;">void myFunction() { // declaration
+  // the body of the function (definition)
+} </pre></div></p>
+<div>For code optimization, it is recommended to separate the declaration and the definition of the function.<br>
+You will often see C programs that have function declaration above main(), and function definition below main(). This will make the code better organized and easier to read:<br>
+<br>
+<b>Example</b>
+<br>
+<pre><p style="background-color:#FFFFE0;>// Function declaration
+void myFunction();
+
+// The main method
+int main() {
+  myFunction();  // call the function
+  return 0;
+}
+
+// Function definition
+void myFunction() {
+  printf("I just got executed!");
+}</pre></div></p>
+<hr>
+<h1 style="color:teal;text-align:center;font_family:times new roman;border:4px;border-style:solid;border-color:lightcoral;background-color:mistyrose;">Function in string.h header file</h1>
+<table style="width:50%;background-color:cornsilk;">
+<tr>
+<th>Function</th>	
+<th>Use</th>
+</tr>
+<tr>
+<td>strlen</td>	
+<td>calculates the length of string</td>
+</tr>
+<tr>
+<td>strcat</td>	
+<td>Appends one string at the end of another</td>
+</tr>
+<tr>
+<td>strncat</td>	
+<td>Appends first n characters of a string at the end of another</td>
+</tr>
+<tr>
+<td>strcpy</td>	
+<td>Copies a string into another</td>
+</tr>
+<tr>
+<td>strncpy</td>	
+<td>Copies first n characters of one string into another</td>
+</tr>
+<tr>
+<td>strcmp</td>	
+<td>Compares two strings</td>
+</tr>
+<tr>
+<td>strncmp</td>	
+<td>Compares first n characters of two strings</td>
+</tr>
+<tr>
+<td>strchr</td>
+<td>Finds the first occurrence of a given character in a string</td>
+</tr>
+</table>
+</body>
+</html>

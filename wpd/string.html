@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>WPD 5</title>
+</head>
+<body background="E:\Diploma\wpd images\Safricloud-bg-web.jpg">
+<h1 style="color:green;text-align: center;font_family:tempus sans;font-size:300%;border: 4px solid dodgerblue;">Strings</h1>
+<p>The string can be defined as the one-dimensional array of characters terminated by a null ('\0'). The character array or the string is used to manipulate text such as word or sentences. Each character in the array occupies one byte of memory, and the last character must always be 0. The termination character ('\0') is important in a string since it is the only way to identify where the string ends. When we define a string as char s[10], the character s[10] is implicitly initialized with the null in the memory.<br>
+Strings are actually one-dimensional array of characters terminated by a null character '\0'. Thus a null-terminated string contains the characters that comprise the string followed by a null.</p>
+<h2 style="color:olive;text-align: center;font_family:tempus sans;font-size:300%;border: 4px solid red;"> Memory presentation in String</h2>
+<img src="E:\Diploma\wpd images\stringrepresent.png" width="400" height="330" style="vertical-align:middle">
+<h3 style="color:blue;text-align: center;font_family:tempus sans;font-size:300%;border: 4px solid red;"> Functions in String</h3>
+<p><b><ul>
+<li>strlen();:- Defines the lenght of string.</li>
+<li>strcmp();:- Compares the strings.</li>
+<li>strcat();:- String concadination.</li>
+<li>strcpy();:- Compares the strings.</li>
+<li>strrev();:- Reverses the string.</li>
+</ul></b>
+</p>
+<h4 style="color:violet;text-align: center;font_family:tempus sans;font-size:200%;"><u>Program using string</u></h4>
+<p style="text-align:left;font-size:110%;"><b>#include<stdio.h>  <br>
+void main ()<br>  
+{  <br>
+    char s[20];<br>  
+    printf("Enter the string?");<br>  
+    scanf("%s",s);  <br>
+    printf("You entered %s",s);<br>  
+}  <br>
+getch();<br></b>
+<h5 style="color:tomato;text-align: center;font_family:tempus sans;font-size:200%;border: 3px solid dodgerblue;">Pointers with strings</h5>
+<p>As we know that string is an array of characters, the pointers can be used in the same way they were used with arrays. <br>
+Once a string is defined, it cannot be reassigned to another set of characters. However, using pointers, we can assign the set of characters to the string.<br>
+pointers can be used to point to the strings. There are various advantages of using pointers to point strings. <br></p>
+<h6 style="color:violet;text-align: center;font_family:tempus sans;font-size:200%;border: 3px solid dodgerblue;"> Important points about the string</h6>
+<p style="border: 2px solid pink;"><ul>
+<li>A string is a sequence of characters stored in a character array.</li>
+<li>A string is a text enclosed in double quotation marks.</li>
+<li>A character such as ‘d’ is not a string and it is indicated by single quotation marks.</li>
+<li>‘C’ provides standard library functions to manipulate strings in a program. String manipulators are stored in <string.h> header file.</li>
+<li>A string must be declared or initialized before using into a program.
+There are different input and output string functions, each one among them has its features.</li>
+<li.Don’t forget to include the string library to work with its functions
+We can convert string to number through the atoi(), atof() and atol() which are very useful for coding and decoding processes.</li>
+<li>We can manipulate different strings by defining a array of strings in C.</li>
+</ul></p>
+
+</body>
+</html>
